@@ -1,0 +1,340 @@
+
+\documentclass{oisinclass}
+\usepackage{amssymb}
+	\title{MATH143C: Homework 2}
+	\author{Oisin Coveney}
+\begin{document}
+
+\maketitle
+
+\textbf{Unfinished problems: 3.1 17, 21}
+
+\section*{Exercise Set 3.1}
+\subsection*{1}
+\subsubsection*{A: \(f(x) = \cos{x}\)}
+\begin{align*}
+	P_1(x)                   & = f(0)\frac{x-0.3}{-0.3} + f(0.3)\frac{x}{0.3-0}                                                                                         \\
+	P_1(0.45)                & = 0.933005                                                                                                                               \\
+	\left|Error_{P_1}\right| & = 0.032558                                                                                                                               \\
+	P_2(x)                   & = f(0)\frac{(x-0.3)(x-0.9)}{(0-0.3)(0-0.9)} + f(0.3)\frac{(x-0)(x-0.9)}{(0.3-0)(0.3-0.9)} + f(0.91)\frac{(x-0)(x-0.3)}{(0.9-0)(0.9-0.3)} \\
+	P_2(0.45)                & = 0.902455                                                                                                                               \\
+	\left|Error_{P_2}\right| & = 0.002008
+\end{align*}
+\subsubsection*{B: \(f(x) = ln(x+1)\)}
+\begin{align*}
+	P_1(x)                   & = f(0)\frac{x-0.3}{-0.3} + f(0.3)\frac{x}{0.3-0}                                                                                        \\
+	P_1(0.45)                & = 0.393546                                                                                                                              \\
+	\left|Error_{P_1}\right| & = 0.021983                                                                                                                              \\
+	P_2(x)                   & = f(0)\frac{(x-0.3)(x-0.9)}{(0-0.3)(0-0.9)} + f(0.3)\frac{(x-0)(x-0.9)}{(0.3-0)(0.3-0.9)} + f(0.9)\frac{(x-0)(x-0.3)}{(0.9-0)(0.9-0.3)} \\
+	P_2(0.45)                & = 0.375392                                                                                                                              \\
+	\left|Error_{P_2}\right| & = 0.003828
+\end{align*}
+
+\subsection*{3B}
+Error for 1A:
+\begin{align*}
+	R_1(\xi, x)    & = \frac{f^2(\xi)}{2}(x)(x-0.3)         \\
+	R_1(0.3, 0.45) & = 0.045558                             \\
+	R_2(\xi, x)    & = \frac{f^3(\xi)}{3!}(x)(x-0.3)(x-0.9) \\
+	R_2(0.9, 0.45) & = 0.012452
+\end{align*}
+Error for 1B:
+\begin{align*}
+	R_1(\xi, x)  & = \frac{f^2(\xi)}{2}(x)(x-0.3)         \\
+	R_1(0, 0.45) & = 0.03375                              \\
+	R_2(\xi, x)  & = \frac{f^3(\xi)}{3!}(x)(x-0.3)(x-0.9) \\
+	R_2(0, 0.45) & = 0.005063
+\end{align*}
+\newpage
+\subsection*{5}
+Using \([x_2, x_4]\) for \(P_1\), and \([x_1, x_3, x_4]\) for \(P_2\)
+\subsubsection*{B}
+\begin{align*}
+	P_1(-\frac{1}{3}) & = 0.3505   \\
+	P_2(-\frac{1}{3}) & = 0.162944 \\
+	P_3(-\frac{1}{3}) & = 0.174519 \\
+\end{align*}
+\subsubsection*{D}
+\begin{align*}
+	P_1(0.9) & = 0.443312 \\
+	P_2(0.9) & = 0.436628 \\
+	P_3(0.9) & = 0.441985 \\
+\end{align*}
+
+\subsection*{7}
+\subsubsection*{Error for 5B}
+\begin{align*}
+	n = 1 \rightarrow                                  & \frac{f^2(\xi)}{2!}(x)(x+0.5)          \\
+	                                                   & = \frac{6\xi + 8.002}{2}(x)(x+0.5)     \\
+	                                                   & = (3\xi + 4.001)(x)(x+0.5)             \\
+	\left(\xi = 0, x = -\frac{1}{3}\right) \rightarrow & =
+	0.222277                                                                                    \\
+	n = 2 \rightarrow                                  & \frac{f^3(\xi)}{3!}(x)(x+0.25)(x+0.75) \\
+	                                                   & = \frac{6}{3!}(x)(x+0.25)(x+0.75)      \\
+	                                                   & = (x)(x+0.25)(x+0.75)                  \\
+	\left(\xi = 0, x = -\frac{1}{3}\right) \rightarrow & = 0.011574                             \\
+\end{align*}
+
+\subsubsection*{Error for 5D}
+\begin{align*}
+	n = 1 \rightarrow                         & \frac{f^2(\xi)}{2!}(x-0.7)(x-1)                                                                                                                                                                                           \\
+	                                          & = \frac{\left(x - 1\right) \left(x - 0.7\right) \left(- e^{2 \xi} \sin{\left(e^{\xi} - 2 \right)} + e^{\xi} \cos{\left(e^{\xi} - 2 \right)}\right)}{2}                                                                    \\
+	\left(\xi = 1, x = 0.9\right) \rightarrow & = 0.028160                                                                                                                                                                                                                \\
+	n = 2 \rightarrow                         & \frac{f^3(\xi)}{3!}(x-0.6)(x-0.8)(x-1)                                                                                                                                                                                    \\
+	                                          & = \frac{\left(x - 1\right) \left(x - 0.8\right) \left(x - 0.6\right) \left(- e^{3 \xi} \cos{\left(e^{\xi} - 2 \right)} - 3 e^{2 \xi} \sin{\left(e^{\xi} - 2 \right)} + e^{\xi} \cos{\left(e^{\xi} - 2 \right)}\right)}{6} \\
+	\left(\xi = 1, x = 0.9\right) \rightarrow & = 0.013832
+\end{align*}
+\subsection*{9}
+\[y = 4.25\]
+\subsection*{10}
+\begin{align*}
+	f(x)           & = \sqrt{x - x^2}                                                                                                                                                   \\
+	P_2(x)         & = y_0\frac{(x - x_1)(x-x_2)}{(x_0-x_2)(x_0 - x_1)} + y_1\frac{(x - x_0)(x-x_2)}{(x_1-x_0)(x_1 - x_2)} + y_2\frac{(x - x_0)(x-x_2)}{(x_2-x_0)(x_0 - x_1)}           \\
+	\text{Given: } & x_0 = 0, x_2 = 1, x = 0.5:                                                                                                                                         \\
+	f(0.5)         & = \sqrt{0.25} = \pm 0.5                                                                                                                                            \\
+	P_2(x)         & = 0\frac{(0.5 - x_1)(0.5-1)}{(0-1)(0 - x_1)} + \left(\sqrt{x_1 - x_1^2}\right)\frac{(0.5 - 0)(0.5-1)}{(x_1-0)(x_1 - 1)} + 0\frac{(0.5 - 0)(0.5-1)}{(1-0)(0 - x_1)} \\
+	               & = \left(\sqrt{x_1 - x_1^2}\right)\frac{-0.25}{x_1^2 - x_1} = \frac{-0.25}{\sqrt{x_1 - x_1^2}}                                                                      \\
+\end{align*}
+Solving for \(f(0.5) - P_2(0.5) = -0.25\):
+\begin{align*}
+	\pm 0.5 - \frac{-0.25}{\sqrt{x_1 - x_1^2}} & = -0.25                                                                                 \\
+	\frac{-0.25}{\sqrt{x_1 - x_1^2}}           & = \{0.75, -0.25\}                                                                       \\
+	-\frac{1}{\sqrt{x_1 - x_1^2}}              & = \{3, -1\}                                                                             \\
+	\left\{\frac{1}{9}, 1\right\}              & = x_1 - x_1^2                                                                           \\
+	\text{Using } \frac{1}{9}: x_1             & = \left\{0.127322003750035, 0.872677996249965\right\}                                   \\
+	\text{Using } 1: x_1                       & = \left\{\frac{1}{2} - \frac{\sqrt{3} i}{2}, \frac{1}{2} + \frac{\sqrt{3} i}{2}\right\}
+\end{align*}
+The largest real value between \((0, 1)\) for \(x_1 = 0.872678\)
+\newpage
+\subsection*{13D}
+\begin{align*}
+	P_3(x)                                                   & = \frac{1.216316 x \left(x - 1\right) \left(x - 0.5\right)}{0.25 \left(0.25 - 1\right) \left(0.25 - 0.5\right)}
+	+ \frac{1.357008 x \left(x - 1\right) \left(x - 0.25\right)}{0.5 \left(0.5 - 1\right) \left(0.5 - 0.25\right)}                                                                                       \\
+	                                                         & + \frac{1.381773 x \left(x - 0.5\right) \left(x - 0.25\right)}{1 \left(1 - 0.5\right) \left(1 - 0.25\right)}
+	+ \frac{1.0 \left(x - 1\right) \left(x - 0.5\right) \left(x - 0.25\right)}{\left(- 1\right) \left(- 0.5\right) \left(0.25\right)}                                                                    \\
+	                                                         & = 25.948083 x \left(x - 1\right) \left(x - 0.5\right)
+	- 21.712130 x \left(x - 1\right) \left(x - 0.25\right)                                                                                                                                               \\
+	                                                         & + 3.684729 x \left(x - 0.5\right) \left(x - 0.25\right) - 8.0 \left(x - 1\right) \left(x - 0.5\right) \left(x - 0.25\right)               \\
+	R_3(x)                                                   & = \frac{f^4(\xi)}{4!}\left(x - 1\right) \left(x - 0.5\right) \left(x - 0.25\right)\left(x\right)                                          \\
+	                                                         & = \frac{\sin{\left(\xi \right)} + \cos{\left(\xi \right)}}{24}\left(x - 1\right) \left(x - 0.5\right) \left(x - 0.25\right)\left(x\right) \\
+	\left(\xi = \frac{\pi}{4}, x = 0.8316\right) \rightarrow & = 0.001591
+\end{align*}
+\subsection*{17}
+\subsection*{19}
+\subsubsection*{Interpolating polynomial}
+\[P_5(x) = -\frac{10089 x^{5}}{4000000} + \frac{6001123 x^{4}}{240000} - \frac{2379665339 x^{3}}{24000} + \frac{471801682097 x^{2}}{2400} - \frac{116923918291129 x}{600} + 77269170756852\]
+\subsubsection*{Estimates}
+\begin{enumerate}
+	\item 1950: 192539
+	\item 1975: 215525
+	\item 2014: 306214
+	\item 2020: 266165
+\end{enumerate}
+The estimated 1950 from the interpolating polynomial was off by more than 40\%, while the 2014 figure was off by approximately 3\%. I would be skeptical about the estimates that I found in the interpolating polynomial.
+
+\section*{Exercise Set 3.2}
+\subsection*{1B}
+\begin{align*}
+	f(x) = - 1.333333 x        & \left(- 2.0 \left(- x - 0.75\right) \left(1.43875 x + 0.694625\right) - 2.0 \left(0.18825 x + 0.069375\right) \left(x + 0.25\right)\right)            \\
+	                           & - 1.333333 \left(- x - 0.75\right) \left(- 2.0 x \left(1.43875 x + 0.694625\right) - 2.0 \left(- x - 0.5\right) \left(3.06425 x + 1.101\right)\right) \\
+	f\left(-\frac{1}{3}\right) & = 0.174519
+\end{align*}
+
+\subsection*{3}
+\subsubsection*{A}
+\begin{align*}
+	f(x)                      & = 3^x                            \\
+	(x_0, x_1, x_2, x_3, x_4) & = (-2, -1, 0, 1, 2)              \\
+	P(\sqrt{3})               & = 6.780246                       \\
+	f(\sqrt{3})               & = 6.704992                       \\
+	\text{Error (Part C)}     & = 6.780246 - 6.704992 = 0.075254
+\end{align*}
+\subsubsection*{B}
+\begin{align*}
+	f(x)                      & = \sqrt{x}                       \\
+	(x_0, x_1, x_2, x_3, x_4) & = (0, 1, 2, 4, 5)                \\
+	P(\sqrt{3})               & = 1.330337                       \\
+	f(\sqrt{3})               & = 1.316074                       \\
+	\text{Error (Part C)}     & = 1.330337 - 1.316074 = 0.014263
+\end{align*}
+\subsection*{5}
+\begin{align*}
+	P_2       & = 4.0  \\
+	P_{1,2}   & = 3.2  \\
+	P_{0,1,2} & = 3.08
+\end{align*}
+\subsection*{12}
+\begin{align*}
+	x            & = [0.3, 0.4, 0.5, 0.6]                                            \\
+	y = x-e^{-x} & = \left[ -0.440818, \  -0.27032, \  -0.106531, \  0.051188\right] \\
+	f^{-1}(0)    & = 0.567143
+\end{align*}
+
+\section*{3.3}
+\subsection*{1B}
+\begin{align*}
+	P_1      & = -0.1769446 + 1.9069687(x-0.6)                                                             \\
+	P_1(0.9) & = 0.395146                                                                                  \\
+	P_2      & = -0.1769446 + 1.9069687(x-0.6) + 0.959224(x-0.7)(x-0.6)                                    \\
+	P_2(0.9) & = 0.452700                                                                                  \\
+	P_3      & = -0.1769446 + 1.9069687(x-0.6) + 0.959224(x-0.7)(x-0.6) + (-1.785741)(x-0.8)(x-0.7)(x-0.6) \\
+	P_3(0.9) & = 0.441985
+\end{align*}
+
+\subsection*{3B}
+Using \(x_1, x_2\) for \(P_1\), and \(x_1, x_2, x_3\) for \(P_2\)
+\begin{align*}
+	P_1       & = 2.905876x-0.574574                                                      \\
+	P_1(0.25) & = 0.151895                                                                \\
+	P_2       & = 2.905876x-2.438209(x-0.2)(x-0.1)-0.574574                               \\
+	P_2(0.25) & = 0.133608                                                                \\
+	P_3       & = 3.365129x-0.473152(x-0.3)(x-0.2)(x-0.1)-2.296264(x-0.2)(x-0.1)-0.957012 \\
+	P_3(0.25) & = -0.132775
+\end{align*}
+
+\subsection*{5B}
+Using \(x_1, x_2\) for \(P_1\), and \(x_1, x_2, x_3\) for \(P_2\)
+\begin{align*}
+	P_1       & = 2.905876 x - 0.574574                                                                                                                                \\
+	P_1(0.25) & = 0.151895                                                                                                                                             \\
+	P_2       & = 2.905876 x - 2.296264 \left(x - 0.3\right) \left(x - 0.2\right) - 0.865162                                                                           \\
+	P_2(0.25) & = -0.132952                                                                                                                                            \\
+	P_3       & = 2.418235 x - 0.473152 \left(x - 0.4\right) \left(x - 0.3\right) \left(x - 0.2\right) - 2.438209 \left(x - 0.4\right) \left(x - 0.3\right) - 0.718869 \\
+	P_3(0.25) & = -0.132775                                                                                                                                            \\
+\end{align*}
+
+
+\subsection*{8}
+\subsubsection*{A}
+\[P_4(x) = 0.063016 x \left(x - 0.6\right) \left(x - 0.3\right) \left(x - 0.1\right) + 0.215 x \left(x - 0.3\right) \left(x - 0.1\right) + 0.5725 x \left(x - 0.1\right) + 1.0517 x - 6.0\]
+\subsubsection*{B}
+\begin{align*}
+	P_5(x) = 0.014159 & x \left(x - 1\right) \left(x - 0.6\right) \left(x - 0.3\right) \left(x - 0.1\right) + 0.063016 x \left(x - 0.6\right) \left(x - 0.3\right) \\
+	                  & \left(x - 0.1\right) + 0.215 x \left(x - 0.3\right) \left(x - 0.1\right) + 0.5725 x \left(x - 0.1\right) + 1.0517 x - 6.0
+\end{align*}
+
+\subsection*{16}
+\begin{align*}
+	f[x_0, x_1] & = 5.0 \\
+	f[x_0]      & = 1.0 \\
+	f[x_1]      & = 3.0
+\end{align*}
+
+\subsection*{18}
+\subsubsection*{A}
+\[P_4(0.75) = 72.86 \rightarrow \text{1 minute, 12.86 seconds}\]
+The actual time was 1:13, so this estimate is extremely close.
+\subsubsection*{B}
+\[
+	\frac{d}{dx}P_4(1.25) = 89.72\frac{\text{seconds}}{\text{mile}} \approx
+	40.12 \text{ miles per hour}
+\]
+
+\subsection*{20}
+\begin{tabular}{lrllr}
+	\toprule
+	{} & x    & P(x) & Q(x) & Actual \\
+	\midrule
+	0  & -2.0 & -1   & -1   & -1     \\
+	1  & -1.0 & 3    & 3    & 3      \\
+	2  & 0.0  & 1    & 1    & 1      \\
+	3  & 1.0  & -1   & -1   & -1     \\
+	4  & 2.0  & 3    & 3    & 3      \\
+	\bottomrule
+\end{tabular} \\
+\(P(x)\) and \(Q(x)\) are the same function - when you reduce the two equations they are equivalent. Thus, \(P(x)\) does not violate the uniqueness property of interpolating polynomials.
+\subsection*{21}
+\begin{align*}
+	f[x_{2}]                                                                                                                        & = a_{2} \left(- x_{0} + x_{2}\right) \left(- x_{1} + x_{2}\right) + f[x_{0}] + f[x_{1}] \left(- x_{0} + x_{2}\right) \\
+	- f[x_{0}] - f[x_{1}] \left(- x_{0} + x_{2}\right) + f[x_{2}]                                                                   & = a_{2} \left(- x_{0} + x_{2}\right) \left(- x_{1} + x_{2}\right)                                                    \\
+	\frac{- f[x_{0}] - f[x_{1}] \left(- x_{0} + x_{2}\right) + f[x_{2}]}{\left(- x_{0} + x_{2}\right) \left(- x_{1} + x_{2}\right)} & = a_{2}                                                                                                              \\
+	- \frac{f[x_{1}]}{- x_{1} + x_{2}} + \frac{- f[x_{0}] + f[x_{2}]}{\left(- x_{0} + x_{2}\right) \left(- x_{1} + x_{2}\right)}    & = a_{2}                                                                                                              \\
+	f[x_{0},x_{1},x_{2}]                                                                                                            & = a_{2}
+\end{align*}
+\subsection*{22}
+\begin{align*}
+	f(x) = P_{n+1}(x)                                            & = P_n(x) + f[x_0, x_1,...,x_n, x](x-x_0)(x-x_1)...(x-x_n) \\
+	\text{Substituting \(f(x)\)}:                                &                                                           \\
+	P_n(x) + \frac{f^{n+1}(\xi)}{(n+1)!}(x-x_0)(x-x_1)...(x-x_n) & = P_n(x) + f[x_0, x_1,...,x_n, x](x-x_0)(x-x_1)...(x-x_n) \\
+	\frac{f^{n+1}(\xi)}{(n+1)!}                                  & = f[x_0, x_1,...,x_n, x]                                  \\
+\end{align*}
+
+\section*{Exercise Set 8.3}
+\subsection*{1A / 3A}
+\begin{align*}
+	(x_0, x_1, x_2) & = \left(-\frac{3}{\sqrt{2}}, 0,\frac{3}{\sqrt{2}}\right) \\
+	P_3(x)          & = 0.532042 x \left(x + 0.866025\right) + 0.66901 x + 1.0 \\
+	f(x) - P(x)     & = \frac{e^\xi}{3!} * \frac{1}{2^2} = 0.1132617           \\
+\end{align*}
+
+\section*{Exercise Set 3.4}
+\subsection*{1C}
+\begin{align*}
+	P_5(x) = -0.024751 & +0.751(x + 0.5)+2.751\left(x + 0.5\right)^{2}+\left(x + 0.25\right) \left(x + 0.5\right)^{2}                                                 \\
+	                   & -7.105427 * 10^{-15}\left(x + 0.25\right)^{2} \left(x + 0.5\right)^{2}+2.131628*10^{-14}x \left(x + 0.25\right)^{2} \left(x + 0.5\right)^{2}
+\end{align*}
+\subsection*{5}
+\subsubsection*{A / B}
+\begin{align*}
+	H_2(x)     & = 0.29552+0.95534(x - 0.3)+-0.142\left(x - 0.3\right)^{2}+-1.05\left(x - 0.32\right) \left(x - 0.3\right)^{2}                                  \\
+	           & +20.77778\left(x - 0.32\right)^{2} \left(x - 0.3\right)^{2}+-436.29630\left(x - 0.35\right) \left(x - 0.32\right)^{2} \left(x - 0.3\right)^{2} \\
+	H_2(0.34)  & = 0.33349                                                                                                                                      \\
+	\sin{0.34} & = 0.33349                                                                                                                                      \\
+	R_2(0.34)  & = 0.000003
+\end{align*}
+With 5 digit rounding, the error bound exceeds the actual error of 0.
+
+\subsubsection*{C}
+\begin{align*}
+	H_7(x)     & = 0.29552+0.95534(x - 0.3)+-0.142\left(x - 0.3\right)^{2}+-1.05\left(x - 0.32\right) \left(x - 0.3\right)^{2}                                                                                              \\
+	           & -32.77778\left(x - 0.32\right)^{2} \left(x - 0.3\right)^{2}+17574.07407\left(x - 0.33\right) \left(x - 0.32\right)^{2} \left(x - 0.3\right)^{2}                                                            \\
+	           & -744814.81482\left(x - 0.33\right)^{2} \left(x - 0.32\right)^{2} \left(x - 0.3\right)^{2}+29455555.55570\left(x - 0.35\right) \left(x - 0.33\right)^{2} \left(x - 0.32\right)^{2} \left(x - 0.3\right)^{2} \\
+	H_7(0.34)  & = 0.33349                                                                                                                                                                                                  \\
+	\sin{0.34} & = 0.33349                                                                                                                                                                                                  \\
+	R_7(0.34)  & = 3.75264 * 10^{-19}
+\end{align*}
+
+\subsection*{9}
+\begin{align*}
+	H_9(x)   & = 75x+-0.031111x^{2} \left(x - 3\right)^{2}+-0.006444x^{2} \left(x - 5\right) \left(x - 3\right)^{2}+0.002264x^{2} \left(x - 5\right)^{2} \left(x - 3\right)^{2}   \\
+	         & -0.000913x^{2} \left(x - 8\right) \left(x - 5\right)^{2} \left(x - 3\right)^{2}+0.000131x^{2} \left(x - 8\right)^{2} \left(x - 5\right)^{2} \left(x - 3\right)^{2} \\
+	         & -2.022363*10^{-5}x^{2} \left(x - 13\right) \left(x - 8\right)^{2} \left(x - 5\right)^{2} \left(x - 3\right)^{2}                                                    \\
+	H_9(10)  & = 742.50                                                                                                                                                           \\
+	H_9'(10) & = 48.38                                                                                                                                                            \\
+\end{align*}
+The car surpasses 55 miles per hour at approximately \(5.65147\) seconds.
+\subsection*{10}
+
+The given divided difference table provides the coefficients to write the Hermite polynomial using the Newton's Divided Difference form of the interpolating polynomial.
+\begin{align*}
+	a_0 & = f[z_0] = f(x_0)                                                                                   \\
+	a_1 & = f[z_0, z_1] = f'(x_0)                                                                             \\
+	a_2 & = f[z_0, z_1, z_2] = \frac{f[z_1, z_2] (x - z_0) - f[z_0, z_1] (x - z_2)}{z_2 - z_1}                \\
+	a_3 & = f[z_0, z_1, z_2, z_3] = \frac{f[z_1, z_2, z_3] (x - z_0) - f[z_0, z_1, z_2] (x - z_3)}{z_3 - z_0} \\
+\end{align*}
+
+Using these coefficients:
+\begin{align*}
+	H_3(x) & = f[z_0] + f[z_0, z_1] (x-x_0) + f[z_0, z_1, z_2] (x-x_0)^2 + f[z_0, z_1, z_2, z_3](x-x_0)^2(x-x_1) \\
+\end{align*}
+
+\section*{Exercise Set 3.5}
+\subsection*{3C}
+\begin{tabular}{l|cccc}
+	i & a           & b          & c           & d           \\
+	\toprule{}
+	0 & -0.02475000 & 1.03237500 & -0.00000000 & 6.50200000  \\
+	1 & 0.33493750  & 2.25150000 & 4.87650000  & -6.50200000
+\end{tabular}	
+\subsection*{11}
+\begin{align*}
+	3 x^{2} - 2 & = - b - 2 c \left(x - 1\right) - 3 d \left(x - 1\right)^{2} \\
+	6 x         & = - 2 c - 6 d \left(x - 1\right)                            \\
+	d           & = -1                                                        \\
+	c           & = -3                                                        \\
+	b           & = -1
+\end{align*}
+\subsection*{15}
+\subsection*{17}
+
+\end{document}
