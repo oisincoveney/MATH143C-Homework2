@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.10.1 (MiKTeX 2.9.7140 64-bit)  (format=lualatex 2019.9.15)  22 APR 2020 19:51
+This is LuaTeX, Version 1.10.1 (MiKTeX 2.9.7140 64-bit)  (format=lualatex 2019.9.15)  25 APR 2020 20:07
  restricted system commands enabled.
 **c:/Users/oisin/Documents/SJSU/MATH143C-Numerical-Analysis/Homework2/Homework2
 
@@ -54,7 +54,7 @@ Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
 Inserting `luaotfload.aux.set_xheight' at position 4 in `luaotfload.patch_font'.
 Inserting `luaotfload.rewrite_fontname' at position 5 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 1.061 seconds
+luaotfload | main : initialization completed in 1.148 seconds
 (C:/Users/oisin/texmf/tex/latex/oisinclass.cls
 Document Class: oisinclass Oisin's Latex Class
 ("C:/Program Files/MiKTeX 2.9/tex/latex/base/article.cls"
@@ -460,28 +460,28 @@ LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (./Homework2.aux)
 \openout1 = Homework2.aux
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 6.
-LaTeX Font Info:    ... okay on input line 6.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 6.
-LaTeX Font Info:    ... okay on input line 6.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 6.
-LaTeX Font Info:    ... okay on input line 6.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 6.
-LaTeX Font Info:    ... okay on input line 6.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 6.
-LaTeX Font Info:    ... okay on input line 6.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 6.
-LaTeX Font Info:    ... okay on input line 6.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 6.
-LaTeX Font Info:    ... okay on input line 6.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 6.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 6.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 7.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 7.
  ("C:/Program Files/MiKTeX 2.9/tex/latex/base/ts1cmr.fd"
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 6.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 6.
-LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: luatex
@@ -519,15 +519,15 @@ LaTeX Font Info:    ... okay on input line 6.
 
 \symgns@font=\mathgroup6
 LaTeX Font Info:    Overwriting symbol font `gns@font' in version `bold'
-(Font)                  TS1/lmr/m/n --> TS1/lmr/bx/n on input line 6.
-Package gensymb Info: Math companion symbols declared on input line 6.
-LaTeX Info: Redefining \degree on input line 6.
-LaTeX Info: Redefining \celsius on input line 6.
+(Font)                  TS1/lmr/m/n --> TS1/lmr/bx/n on input line 7.
+Package gensymb Info: Math companion symbols declared on input line 7.
+LaTeX Info: Redefining \degree on input line 7.
+LaTeX Info: Redefining \celsius on input line 7.
 Package gensymb Info: Using text companion symbols for \degree, \celsius and \pe
-rthousand on input line 6.
-LaTeX Info: Redefining \ohm on input line 6.
-Package gensymb Info: Using \textohm for \ohm on input line 6.
-Package gensymb Info: Using \textmu for \micro on input line 6.
+rthousand on input line 7.
+LaTeX Info: Redefining \ohm on input line 7.
+Package gensymb Info: Using \textohm for \ohm on input line 7.
+Package gensymb Info: Using \textmu for \micro on input line 7.
 (C:/Users/oisin/AppData/Roaming/MiKTeX/2.9/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count121
@@ -543,7 +543,7 @@ Package gensymb Info: Using \textmu for \micro on input line 6.
 \everyMPtoPDFconversion=\toks25
 )
 \AtBeginShipoutBox=\box31
-Package hyperref Info: Link coloring OFF on input line 6.
+Package hyperref Info: Link coloring OFF on input line 7.
  ("C:/Program Files/MiKTeX 2.9/tex/latex/hyperref/nameref.sty"
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 
@@ -552,25 +552,25 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count127
 )
-LaTeX Info: Redefining \ref on input line 6.
-LaTeX Info: Redefining \pageref on input line 6.
-LaTeX Info: Redefining \nameref on input line 6.
+LaTeX Info: Redefining \ref on input line 7.
+LaTeX Info: Redefining \pageref on input line 7.
+LaTeX Info: Redefining \nameref on input line 7.
 
 (./Homework2.out) (./Homework2.out)
 \@outlinefile=\write3
 
 \openout3 = Homework2.out
-LaTeX Font Info:    Try loading font information for U+msa on input line 9.
+LaTeX Font Info:    Try loading font information for U+msa on input line 10.
 
 ("C:/Program Files/MiKTeX 2.9/tex/latex/amsfonts/umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 9.
+LaTeX Font Info:    Try loading font information for U+msb on input line 10.
 
 ("C:/Program Files/MiKTeX 2.9/tex/latex/amsfonts/umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for TS1+lmr on input line 9.
+LaTeX Font Info:    Try loading font information for TS1+lmr on input line 10.
 
 ("C:/Program Files/MiKTeX 2.9/tex/latex/lm/ts1lmr.fd"
 File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
@@ -579,39 +579,39 @@ File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 {C:/Users/oisin/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
 warning  (pdf backend): ignoring duplicate destination with the name 'page.1'
 [1] [2] [3]
-Overfull \hbox (6.77989pt too wide) detected at line 141
+Overfull \hbox (6.77989pt too wide) detected at line 142
 []
  []
 
 [4]
-Overfull \hbox (27.10966pt too wide) detected at line 182
+Overfull \hbox (27.10966pt too wide) detected at line 183
 []
  []
 
 [5] [6] [7]
-Overfull \hbox (51.63388pt too wide) detected at line 295
+Overfull \hbox (51.63388pt too wide) detected at line 296
 []
  []
 
-[8]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 340.
- [9]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 340.
+[8] [9] [10] [11] [12] [13] [14] [15] [16] [17]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 687.
+ [18]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 687.
  (./Homework2.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 340.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 340.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 687.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 687.
 Package rerunfilecheck Info: File `Homework2.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 340.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 687.
 )
 
 Here is how much of LuaTeX's memory you used:
- 8100 strings out of 494305
+ 8144 strings out of 494305
  100000,266212 words of node,token memory allocated
- 503 words of node memory still in use:
-   6 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 1 glyph, 12 attribute, 51 glue_spec
-, 12 attribute_list, 1 write nodes
-   avail lists: 2:824,3:149,4:21,5:179,6:22,7:1997,8:119,9:670,10:3,11:37
+ 579 words of node memory still in use:
+   6 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 1 glyph, 31 attribute, 51 glue_spec
+, 31 attribute_list, 1 write nodes
+   avail lists: 2:952,3:149,4:21,5:242,6:22,7:1997,8:119,9:903,10:3,11:41
  12014 multiletter control sequences out of 65536+200000
  65 fonts using 4386983 bytes
  35i,13n,45p,344b,357s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -622,14 +622,15 @@ miktex 2.9/fonts/opentype/public/lm/lmroman12-regular.otf><c:/program files/mikt
 ex 2.9/fonts/opentype/public/lm/lmroman17-regular.otf><C:/Program Files/MiKTeX 2
 .9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX 2.9/fonts/
 type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pub
-lic/amsfonts/cm/cmmi7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfon
-ts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr5
-.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Pr
-ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Fil
-es/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
-Output written on Homework2.pdf (10 pages, 147189 bytes).
+lic/amsfonts/cm/cmmi5.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfon
+ts/cm/cmmi7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr1
+0.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/P
+rogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program File
+s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 
+2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
+Output written on Homework2.pdf (19 pages, 198352 bytes).
 
-PDF statistics: 173 PDF objects out of 1000 (max. 8388607)
- 67 named destinations out of 1000 (max. 131072)
+PDF statistics: 251 PDF objects out of 1000 (max. 8388607)
+ 111 named destinations out of 1000 (max. 131072)
  1 words of extra memory for PDF output out of 10000 (max. 100000000)
 

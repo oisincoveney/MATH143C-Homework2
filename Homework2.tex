@@ -3,6 +3,7 @@
 \usepackage{amssymb}
 	\title{MATH143C: Homework 2}
 	\author{Oisin Coveney}
+	\renewcommand{\arraystretch}{1.5}
 \begin{document}
 
 \maketitle
@@ -325,7 +326,7 @@ Using these coefficients:
 	\toprule{}
 	0 & -0.02475000 & 1.03237500 & -0.00000000 & 6.50200000  \\
 	1 & 0.33493750  & 2.25150000 & 4.87650000  & -6.50200000
-\end{tabular}	
+\end{tabular}
 \subsection*{11}
 \begin{align*}
 	3 x^{2} - 2 & = - b - 2 c \left(x - 1\right) - 3 d \left(x - 1\right)^{2} \\
@@ -335,6 +336,352 @@ Using these coefficients:
 	b           & = -1
 \end{align*}
 \subsection*{15}
+\begin{align*}
+	S_0                                        & = 2.103418 x + 1.0      \\
+	S_1                                        & = 2.324637 x + 0.988939 \\
+	\int_{0}^{0.05}S_0 + \int_{0.05}^{0.1} S_1 & = 0.110794              \\
+	\int_{0}^{0.1} e^x                         & = 0.110701              \\
+	|Error|                                    & = 9.223578 * 10^{-5}
+\end{align*}
 \subsection*{17}
 
+\begin{tabular}{l|cccc}
+	Range      & a     & b     & c     & d     \\
+	\toprule{}
+	(0,0.25)   & 1.00  & -0.76 & -0.00 & -6.63 \\
+	(0.25,0.5) & 0.71  & -2.00 & -4.97 & 6.63  \\
+	(0.5,0.75) & 0.00  & -3.24 & -0.00 & 6.63  \\
+	(0.75,1)   & -0.71 & -2.00 & 4.97  & -6.63
+\end{tabular}
+
+\begin{align*}
+	\int_{0}^{1}S(x)  & = -0.493792      \\
+	\int_{0}^{1}f(x)  & = 0              \\
+	|Error|           & = 0.493792       \\[3.5ex]
+	S'(0.5) = f'(0.5) & = 0              \\
+	|Error|           & = 0              \\[3.5ex]
+	S''(0.5)          & = 0              \\
+	f''(0.5)          & = -\frac{\pi}{2} \\
+	|Error|           & = -\frac{\pi}{2} \\
+\end{align*}
+
+\section*{Exercise Set 3.6}
+\subsection*{3A}
+\begin{tabular}{l|cccc}
+	  & 0    & 1      & 2     & 3      \\
+	\toprule{}
+	a & 1.00 & 1.50   & 15.00 & -11.50 \\
+	b & 6.00 & -14.25 & 19.50 & -9.25
+\end{tabular}
+
+\section*{Exercise Set 4.1}
+\subsection*{1}
+\subsubsection*{A}
+\(
+\begin{bmatrix}
+	0.85 & 0.80
+\end{bmatrix}
+\)
+\subsubsection*{B}
+\(
+\begin{bmatrix}
+	3.71 & 3.15
+\end{bmatrix}
+\)
+
+\subsection*{3}
+\subsubsection*{A}
+\(
+\begin{bmatrix}
+	x        & |Error|  & Bound    \\
+	0.000000 & 0.294000 & 0.300000 \\
+	0.200000 & 0.284597 & 0.277860 \\
+	0.400000 & 0.259175 & 0.250818
+\end{bmatrix}
+\)
+
+\subsubsection*{B}
+\(
+\begin{bmatrix}
+	x        & |Error|  & Bound    \\
+	0.000000 & 0.294000 & 0.300000 \\
+	0.200000 & 0.284597 & 0.277860 \\
+	0.400000 & 0.259175 & 0.250818
+\end{bmatrix}
+\)
+
+\subsection*{13}
+Using the five point midpoint formula:
+\begin{align*}
+	f'(x)                                 & = \frac{1}{12}\left(f(x - 2h) - 8(f(x-h)) + 8 (f(x+h)) - f(x+h)\right) \\
+	f'(3)                                 & = 0.22585                                                              \\
+	|Error| = \frac{f^5(\xi) * (1)^4}{30} & = 0.766667                                                             \\
+\end{align*}
+
+\subsection*{15}
+\subsubsection*{A}
+\begin{align*}
+	\frac{f(x_1) - f(x_0)}{x_1 - x_0} & = 0.852 \\
+	\frac{f(x_2) - f(x_1)}{x_2 - x_1} & = 0.796 \\[3.5ex]
+	\frac{f(x_0) - f(x_1)}{x_0 - x_1} & = 0.852 \\
+	\frac{f(x_1) - f(x_2)}{x_1 - x_2} & = 0.796 \\
+\end{align*}
+
+\subsubsection*{B}
+\begin{align*}
+	\frac{f(x_1) - f(x_0)}{x_1 - x_0} & = 3.707 \\
+	\frac{f(x_2) - f(x_1)}{x_2 - x_1} & = 3.153 \\[3.5ex]
+	\frac{f(x_0) - f(x_1)}{x_0 - x_1} & = 3.707 \\
+	\frac{f(x_1) - f(x_2)}{x_1 - x_2} & = 3.153 \\
+\end{align*}
+
+\subsection*{18A}
+\begin{align*}
+	f(x)     & = - 0.339961 x^{4} + 0.428736 x^{3} - 0.770008 x^{2} + 0.072283 x + 0.993323 \\
+	f'(x)    & = - 1.359844 x^{3} + 1.286209 x^{2} - 1.540016 x + 0.072283                  \\
+	f'(0.4)  & = -0.424960                                                                  \\
+	f''(x)   & = - 4.079531 x^{2} + 2.572419 x - 1.540016                                   \\
+	f''(0.4) & = -1.163773                                                                  \\
+\end{align*}
+
+\subsection*{24}
+\begin{align*}
+	f'(x_0)         & = A\left(f(x_0) + (-h)f'(x_0) + \frac{f''(x_0)(-h)^2}{2!} + \frac{f'''(x_0)(-h)^3}{3!} + \frac{f^4(x_0)(-h)^4}{4!} + \frac{f^5(\xi)(-h)^5}{5!}\right)   \\
+	                & + B\left(f(x_0)\right)                                                                                                                                  \\
+	                & + C\left(f(x_0) + ((h))f'(x_0) + \frac{f''(x_0)(h)^2}{2!} + \frac{f'''(x_0)(h)^3}{3!} + \frac{f^4(x_0)(h)^4}{4!} + \frac{f^5(\xi)(h)^5}{5!}\right)      \\
+	                & + D\left(f(x_0) + ((2h))f'(x_0) + \frac{f''(x_0)(2h)^2}{2!} + \frac{f'''(x_0)(2h)^3}{3!} + \frac{f^4(x_0)(2h)^4}{4!} + \frac{f^5(\xi)(2h)^5}{5!}\right) \\
+	                & + E\left(f(x_0) + ((3h))f'(x_0) + \frac{f''(x_0)(3h)^2}{2!} + \frac{f'''(x_0)(3h)^3}{3!} + \frac{f^4(x_0)(3h)^4}{4!} + \frac{f^5(\xi)(3h)^5}{5!}\right) \\
+	                & = (A+B+C+D+E) f(x_0)                                                                                                                                    \\
+	                & + (-hA + hC + 2hD + 3hE) (f'(x_0))                                                                                                                      \\
+	                & + (0.5(h^2)A + 0.5(h^2)C + 2h^2D + 4.5h^2E)                                                                                                             \\
+	                & + \frac{1}{6} (-h^3A + h^3C + 8h^3D + 27h^3)                                                                                                            \\
+	                & + \frac{1}{24} (h^4A + h^4C + 16h^4D + 81h^4E)                                                                                                          \\
+	                & \text{Using } h=1:                                                                                                                                      \\
+	(A, B, C, D, E) & = (-0.25, -0.83333333,  1.5,        -0.5,         0.08333333)                                                                                           \\
+\end{align*}
+The polynomial:
+\[
+	f'(x_0) = - \frac{0.25}{h}(h + x_{0})- \frac{0.83333333}{h}(x_{0}) + \frac{1.5}{h}(- h + x_{0})- \frac{0.5}{h}(- 2 h + x_{0}) + \frac{0.08333333}{h}(- 3 h + x_{0}) + O(h^4)
+\]
+\subsection*{25}
+\begin{align*}
+	f'(0.4) & = - 1.25 f{\left(0.2 \right)} - 4.16666665 f{\left(0.4 \right)} + 7.5 f{\left(0.6 \right)} - 2.5 f{\left(0.8 \right)} + 0.41666665 f{\left(1.0 \right)} \\
+	        & = -0.424984                                                                                                                                             \\
+	f'(0.8) & = - 1.25 f{\left(0.6 \right)} - 4.16666665 f{\left(0.8 \right)} + 7.5 f{\left(1.0 \right)} - 2.5 f{\left(1.2 \right)} + 0.41666665 f{\left(1.4 \right)} \\
+	        & = -1.032772
+\end{align*}
+\subsection*{29}
+\begin{align*}
+	e(h)                & = \frac{\epsilon}{h} + \frac{h^2}{6}M    \\
+	e'(h)               & = \frac{M h}{3} - \frac{\epsilon}{h^{2}} \\
+	\text{Using } e'(h) & = 0                                      \\
+	h                   & = \sqrt[3]{\frac{3\epsilon}{M}}          \\
+\end{align*}
+If \(e'(h) < 0, h < \sqrt[3]{\frac{3\epsilon}{M}}\), and if \(e'(h) > 0, h > \sqrt[3]{\frac{3\epsilon}{M}}\). Thus, there is a minimum at \( h= \sqrt[3]{\frac{3\epsilon}{M}} \).
+
+\newpage
+\subsection*{27}
+Using \(x = 420\) and \(f(x) = x^4\): \\
+\begin{tabular}{l|rrr}
+	n  & \(f_n'(x)\)               & \(f(x)\)  & Absolute Error          \\
+	\toprule
+	0  & 297412081.000000000000000 & 296352000 & 1060081.000000000000000 \\
+	1  & 296457856.800999999046326 & 296352000 & 105856.800999999046326  \\
+	2  & 296362584.168000996112823 & 296352000 & 10584.168000996112823   \\
+	3  & 296353058.401679992675781 & 296352000 & 1058.401679992675781    \\
+	4  & 296352105.840016782283783 & 296352000 & 105.840016782283783     \\
+	5  & 296352010.584000170230865 & 296352000 & 10.584000170230865      \\
+	6  & 296352001.058399975299835 & 296352000 & 1.058399975299835       \\
+	7  & 296352000.105839967727661 & 296352000 & 0.105839967727661       \\
+	8  & 296352000.010583996772766 & 296352000 & 0.010583996772766       \\
+	9  & 296352000.001058399677277 & 296352000 & 0.001058399677277       \\
+	10 & 296352000.000105857849121 & 296352000 & 0.000105857849121       \\
+	11 & 296352000.000010609626770 & 296352000 & 0.000010609626770       \\
+	12 & 296352000.000001072883606 & 296352000 & 0.000001072883606       \\
+	13 & 296352000.000000119209290 & 296352000 & 0.000000119209290       \\
+	14 & 296352000                 & 296352000 & 0                       \\
+	15 & 296352000                 & 296352000 & 0                       \\
+	16 & 296352000                 & 296352000 & 0                       \\
+	17 & 296352000                 & 296352000 & 0                       \\
+	18 & 296352000                 & 296352000 & 0                       \\
+	19 & 296352000                 & 296352000 & 0                       \\
+	20 & 296352000                 & 296352000 & 0                       \\
+\end{tabular}
+
+As \(n\) increases, \(f_n'(x)\) comes closer to the actual value of \(f(x)\).
+
+\section*{4.2}
+\subsection*{1}
+\subsubsection*{A}
+
+Output from program:
+\[
+	\left[
+		\begin{array}{l|ccc}
+			h           & N_1      & N_2      & N_3      \\
+			\toprule{}
+			h           & 0.841181 & 0.000000 & 0.000000 \\
+			\frac{h}{2} & 0.911608 & 0.982035 & 0.000000 \\
+			\frac{h}{4} & 0.953102 & 0.994596 & 1.007157
+		\end{array}
+		\right]
+\]
+\[N_3(h) = 1.007157\]
+\newpage
+\subsubsection*{C}
+\[\left[
+		\begin{array}{l|ccc}
+			h           & N_1      & N_2      & N_3      \\
+			\toprule{}
+			h           & 2.290365 & 0.000000 & 0.000000 \\
+			\frac{h}{2} & 2.305264 & 2.305501 & 0.000000 \\
+			\frac{h}{4} & 2.295243 & 2.295084 & 2.295074
+		\end{array}
+		\right]\]
+\[N_3(h) = 2.250282\]
+
+\subsection*{5}
+\[
+	\left[
+		\begin{array}{l|rrrr}
+			h           & N_1      & N_2      & N_3      & N_4      \\
+			\toprule{}
+			h           & 1.570796 & 0.000000 & 0.000000 & 0.000000 \\
+			\frac{h}{2} & 1.896119 & 1.901283 & 0.000000 & 0.000000 \\
+			\frac{h}{4} & 1.974232 & 1.975472 & 1.975544 & 0.000000 \\
+			\frac{h}{8} & 1.993570 & 1.993877 & 1.993895 & 1.993896
+		\end{array}
+		\right]
+\]
+\[
+	N_4(h) = 1.993896
+\]
+
+\subsection*{8}
+To remove fluff from the calculations, let's define some variables:
+\begin{align*}
+	A                                                                                                                             & = \frac{1}{2}f''(x_0)                                                                                                    \\
+	B                                                                                                                             & = \frac{1}{6}f^3(x_0)                                                                                                    \\
+	D(a)                                                                                                                          & = f(x_0 + a) - f(x_0)                                                                                                    \\[3ex]
+	\operatorname{N_{1}}{\left(h \right)}                                                                                         & = - A h - B h^{2} + \mathcal{O}{\left(h^{3} \right)} + \frac{D{\left(h \right)}}{h}                                      \\
+	\operatorname{N_{1}}{\left(2 h \right)}                                                                                       & =- 2 A h - 4 B h^{2} + \mathcal{O}{\left(h^{3} \right)} + \frac{D{\left(2 h \right)}}{2 h}                               \\
+	\operatorname{N_{2}}{\left(h \right)} = 2 * \operatorname{N_{1}}{\left( h \right)} - \operatorname{N_{1}}{\left(2 h \right)}  & = 2 B h^{2} + \mathcal{O}{\left(h^{3} \right)} + \frac{2 D{\left(h \right)}}{h} - \frac{D{\left(2 h \right)}}{2 h}       \\
+	\operatorname{N_{2}}{\left(2 h \right)}                                                                                       & =8 B h^{2} + \mathcal{O}{\left(h^{3} \right)} + \frac{D{\left(2 h \right)}}{h} - \frac{D{\left(4 h \right)}}{4 h}        \\
+	\operatorname{N_{3}}{\left(h \right)}  = 4 * \operatorname{N_{2}}{\left( h \right)} - \operatorname{N_{2}}{\left(2 h \right)} & = \mathcal{O}{\left(h^{3} \right)} + \frac{32 D{\left(h \right)} - 12 D{\left(2 h \right)} + D{\left(4 h \right)}}{12 h} \\
+\end{align*}
+Substituting \(D(a)\) back into the equation:
+\[
+	\operatorname{N_{3}}{\left(h \right)}  =\mathcal{O}{\left(h^{3} \right)} + \frac{- 21 f{\left(x \right)} + 32 f{\left(h + x \right)} - 12 f{\left(2 h + x \right)} + f{\left(4 h + x \right)}}{12 h} + \mathcal{O}{\left(h^{3} \right)}
+\]
+
+
+\subsection*{9}
+\begin{align*}
+	N_1(h)   & = K_{1} h + K_{2} h^{2} + D{\left(h \right)}                                                                            \\
+	N_1(h/3) & = \frac{K_{1} h}{3} + \frac{K_{2} h^{2}}{9} + D{\left(\frac{h}{3} \right)}                                              \\
+	N_1(h/9) & = \frac{K_{1} h}{9} + \frac{K_{2} h^{2}}{81} + D{\left(\frac{h}{9} \right)}                                             \\
+	N_2(h)   & = - \frac{K_{2} h^{2}}{3} + \frac{3 D{\left(\frac{h}{3} \right)}}{2} - \frac{D{\left(h \right)}}{2}                     \\
+	N_2(h/3) & = - \frac{K_{2} h^{2}}{27} + \frac{3 D{\left(\frac{h}{9} \right)}}{2} - \frac{D{\left(\frac{h}{3} \right)}}{2}          \\
+	N_3(h)   & = \frac{27 D{\left(\frac{h}{9} \right)}}{16} - \frac{3 D{\left(\frac{h}{3} \right)}}{4} + \frac{D{\left(h \right)}}{16} \\
+\end{align*}
+
+\subsection*{11}
+\subsubsection*{A / B / C}
+\begin{align*}
+	N_1(h)    & = K_{1} h + K_{2} h^{2} + K_{3} h^{3} + \left(h + 1\right)^{\frac{1}{h}}                                                                                                     \\
+	N_1(0.04) & = 0.04 K_{1} + 0.0016 K_{2} + 6.4 \cdot 10^{-5} K_{3} + 2.665836                                                                                                             \\
+	N_2(h)    & = - \frac{K_{2} h^{2}}{2} - \frac{3 K_{3} h^{3}}{4} + 2 \left(\frac{h}{2} + 1\right)^{\frac{2}{h}} - \left(h + 1\right)^{\frac{1}{h}}                                        \\
+	N_2(0.04) & = - 0.0008 K_{2} - 4.8 \cdot 10^{-5} K_{3} + 2.71734                                                                                                                         \\
+	N_3(h)    & = \frac{K_{3} h^{3}}{8} + \frac{8 \left(\frac{h}{4} + 1\right)^{\frac{4}{h}}}{3} - 2 \left(\frac{h}{2} + 1\right)^{\frac{2}{h}} + \frac{\left(h + 1\right)^{\frac{1}{h}}}{3} \\
+	N_3(0.04) & = 8.0 \cdot 10^{-6} K_{3} + 2.718273                                                                                                                                         \\
+	e         & = 2.718282                                                                                                                                                                   \\
+\end{align*}
+The assumption in B seems to hold up. The absolute error between \(N_3\) and the exact answer is approximately \(0.000009\).
+
+\section*{Exercise Set 4.3}
+\subsection*{1 / 3}
+Using the trapezoidal rule:
+\[
+	\frac{h}{2}\left(f(a) + f(a+h)\right)
+\]
+\subsubsection*{A}
+\[X = [0.5, 1], Y = [0.0625, 1] \rightarrow 0.265625\]
+\[
+	\text{Error Bound} =  0.125000000000000
+\]
+\[
+	\text{Actual Error} =  0.071875
+\]
+\subsubsection*{C}
+\[
+	X = [1, 1.5], Y = [0.0, 0.912296]\rightarrow  0.228074
+\]
+\[
+	\text{Error Bound} =  0.0396971897522534
+\]
+\[
+	\text{Actual Error} =  0.03581476557804644
+\]
+\subsubsection*{H}
+\[
+	X = [0, 0.785398], Y = [0.0, 10.550724] \rightarrow 4.143260
+\]
+\[
+	\text{Error Bound} =  2.12980904832081
+\]
+\[
+	\text{Actual Error} =  1.5546310226869071
+\]
+\subsection*{19}
+\(
+\begin{array}{l|rrr}
+	\toprule
+	i & x^i & \int_{-1}^{1}f(x) & f{\left(- \frac{\sqrt{3}}{3} \right)} + f{\left(\frac{\sqrt{3}}{3} \right)} \\
+	\midrule
+	0 & 1   & 2                 & 2                                                                           \\
+	1 & x   & 0                 & 0                                                                           \\
+	2 & x^2 & 2/3               & 2/3                                                                         \\
+	3 & x^3 & 0                 & 0                                                                           \\
+	4 & x^4 & 2/5               & 2/9                                                                         \\
+	\bottomrule
+\end{array}
+\)\\
+At \(x^4\), the values diverge. Thus, the degree of precision is 3.
+\subsection*{21}
+\(
+\begin{array}{l|rrr}
+	\toprule
+	i & x^i = f(x) & c_0f(-1) + c_1f(1) + c_2(1) & \int_{-1}^{1}f(x) \\
+	\midrule
+	0 & 1          & c_0 + c_1 + c_2             & 2                 \\
+	1 & x          & -c_0 + c_2                  & 0                 \\
+	2 & x^2        & c_0 + c_2                   & 2/3               \\
+	\bottomrule
+\end{array}
+\) \\[5ex]
+Solving for the unknowns:
+\begin{align*}
+	c_{0} + c_{1} + c_{2} - 2   & = 0                                                         \\
+	- c_{0} + c_{2}             & = 0                                                         \\
+	c_{0} + c_{2} - \frac{2}{3} & = 0                                                         \\
+	(c_0, c_1, c_2)             & = \left( \frac{1}{3}, \  \frac{4}{3}, \  \frac{1}{3}\right) \\
+\end{align*}
+\subsection*{26}
+\[
+	\begin{array}{llll}
+		\toprule
+		n & x^n   & \int_{x_0}^{x_2}f(x)                                         & a_0f(x_0) + a_1f(x_1) +a_2f(x_2)                                                                \\
+		\midrule
+		0 & x     & - \frac{x_{0}^{2}}{2} + \frac{\left(h + x_{0}\right)^{2}}{2} & a_{0} x_{0} + a_{1} \left(\frac{h}{2} + x_{0}\right) + a_{2} \left(h + x_{0}\right)             \\
+		1 & x^{2} & - \frac{x_{0}^{3}}{3} + \frac{\left(h + x_{0}\right)^{3}}{3} & a_{0} x_{0}^{2} + a_{1} \left(\frac{h}{2} + x_{0}\right)^{2} + a_{2} \left(h + x_{0}\right)^{2} \\
+		2 & x^{3} & - \frac{x_{0}^{4}}{4} + \frac{\left(h + x_{0}\right)^{4}}{4} & a_{0} x_{0}^{3} + a_{1} \left(\frac{h}{2} + x_{0}\right)^{3} + a_{2} \left(h + x_{0}\right)^{3} \\
+		\bottomrule
+	\end{array}
+\]
+\begin{align*}
+	- \frac{x_{0}^{2}}{2} + \frac{\left(h + x_{0}\right)^{2}}{2} & = a_{0} x_{0} + a_{1} \left(\frac{h}{2} + x_{0}\right) + a_{2} \left(h + x_{0}\right)             \\
+	- \frac{x_{0}^{3}}{3} + \frac{\left(h + x_{0}\right)^{3}}{3} & = a_{0} x_{0}^{2} + a_{1} \left(\frac{h}{2} + x_{0}\right)^{2} + a_{2} \left(h + x_{0}\right)^{2} \\
+	- \frac{x_{0}^{4}}{4} + \frac{\left(h + x_{0}\right)^{4}}{4} & = a_{0} x_{0}^{3} + a_{1} \left(\frac{h}{2} + x_{0}\right)^{3} + a_{2} \left(h + x_{0}\right)^{3} \\
+	(a_0, a_1, a_2)                                              & = \left( \frac{h}{6}, \  \frac{2 h}{3}, \  \frac{h}{6}\right)
+\end{align*}
 \end{document}
